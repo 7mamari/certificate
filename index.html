@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include jsPDF library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Logo Image -->
+<div class="logo-container">
+    <img src="icon.png" alt="Certificate Builder Logo" class="logo" />
+</div>
+
+<h2>Certificate Generator Wizard</h2>
+
+<div class="form-container">
+    <label for="full-name">Enter Your Full Name:</label><br>
+    
+    <input type="text" id="full-name" placeholder="eg.Ahmed Said" />
+    <br>
+    <button onclick="generateCertificate()">Generate Certificate</button>
+    
+</div>
+
+<div id="certificate">
+    <div id="name"></div>
+</div>
+
+<a id="downloadLink" href="#" Styles="display:none;">
+    <button>Download Certificate as PDF</button>
+    
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
